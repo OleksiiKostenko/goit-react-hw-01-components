@@ -5,6 +5,8 @@ table.transaction_history {
     text-align: center;
     border-collapse: collapse;
     width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 table.transaction_history td,
@@ -15,6 +17,7 @@ table.transaction_history th {
 
 table.transaction_history tbody td {
     font-size: 13px;
+    background: #ECF1F4;
 }
 
 table.transaction_history td:nth-child(even) {
@@ -22,29 +25,18 @@ table.transaction_history td:nth-child(even) {
 }
 
 table.transaction_history thead {
-    background: #FFFFFF;
-    border-bottom: 4px solid #333333;
+    background: #00BCD5;
+
 }
 
 table.transaction_history thead th {
     font-size: 15px;
     font-weight: bold;
-    color: #333333;
+    color: #fff;
     text-align: center;
-    border-left: 2px solid #333333;
+
 }
 
 table.transaction_history thead th:first-child {
     border-left: none;
-}
-
-table.transaction_history tfoot {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333333;
-    border-top: 4px solid #333333;
-}
-
-table.transaction_history tfoot td {
-    font-size: 14px;
 }
