@@ -5,6 +5,8 @@ import { TransactionHistory } from 'components/TransactionHistory';
 import user from 'part/user';
 import data from 'part/data';
 import friends from 'part/friends';
+import transactions from 'part/transactions';
+
 
 
 export const App = () => {
@@ -18,8 +20,8 @@ export const App = () => {
   stats={user.stats}
 />
       <Statistics stats={data} />
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
