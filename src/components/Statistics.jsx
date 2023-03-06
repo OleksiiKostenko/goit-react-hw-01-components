@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import css from 'components/Css/Statistics.module.css'
 import { StatisticsDataList } from '../components/StatisticsDataList'
 
 
 export const Statistics = ({ stats }) => {
-  return <section className="statistics">
-  <h2 className="title">Upload stats</h2>
-  <ul className="stat-list">
+  return <section className={css.statistics}>
+    < h2 className = { css.title } >Upload stats</h2>
+    <ul className={css.stat_list}>
       {stats.map(({id,label,percentage}) =>
         <StatisticsDataList
           key={id}

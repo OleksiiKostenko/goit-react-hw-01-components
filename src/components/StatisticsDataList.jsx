@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import css from 'components/Css/Statistics.module.css'
 
 export const StatisticsDataList = ({ label, percentage }) => {
-    return <li style={{backgroundColor: `#${randomColor()}` }}>
-        <span className="label">{label}  </span>
-        <span className="percentage">  {percentage}%</span>
+    return <li className={css.item} style={{backgroundColor: `#${randomColor()}` }}>
+        <span className={css.label}>{label}</span>
+        <span className={css.percentage}>{percentage}%</span>
       </li>
 }
 
