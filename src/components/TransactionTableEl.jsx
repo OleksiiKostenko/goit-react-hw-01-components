@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import css from 'components/Css/TransactionHistory.module.css'
 
 
 export const TransactionTableEl = ({ type, amount, currency }) => {
